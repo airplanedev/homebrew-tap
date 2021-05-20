@@ -5,24 +5,24 @@
 class Airplane < Formula
   desc ""
   homepage "https://airplane.dev"
-  version "0.0.38"
+  version "0.0.39"
   bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/airplanedev/cli/releases/download/v0.0.38/airplane_darwin_x86_64.tar.gz"
-    sha256 "09d490c9504f165fc6fe63275c56805513e0c4be9a61b9483a89dd1b81b31da3"
+    url "https://github.com/airplanedev/cli/releases/download/v0.0.39/airplane_darwin_x86_64.tar.gz"
+    sha256 "449c1a7890bb69e6637e714b7fa6b7efa13d65b0baa660a5a085a2363802fe2a"
   end
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/airplanedev/cli/releases/download/v0.0.38/airplane_darwin_arm64.tar.gz"
-    sha256 "366bf2e13e4b1acc269d0badeda7f3c8c4be8fb09a025eed9ffeae6f34476610"
+    url "https://github.com/airplanedev/cli/releases/download/v0.0.39/airplane_darwin_arm64.tar.gz"
+    sha256 "88ea4309a20ee920d62228ce4f1e50b529370095f90ca0f204465c11e6d57c60"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/airplanedev/cli/releases/download/v0.0.38/airplane_linux_x86_64.tar.gz"
-    sha256 "19ef6c49c2445ccaf8665ac6849ac18997b0e03c3bbba5f6de1fa9e254c3e53d"
+    url "https://github.com/airplanedev/cli/releases/download/v0.0.39/airplane_linux_x86_64.tar.gz"
+    sha256 "7401ca799fad30665d4f3961cf57dfacfb9d559f9d8fc8ebf35b998367202b51"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/airplanedev/cli/releases/download/v0.0.38/airplane_linux_arm64.tar.gz"
-    sha256 "ef68afbcbbd29237ca17760a91b0885de40b381e26196246ed6d93552f189b4d"
+    url "https://github.com/airplanedev/cli/releases/download/v0.0.39/airplane_linux_arm64.tar.gz"
+    sha256 "4efacb296c219b59269a2a5b9fa94ce9544c811f3fc04f119d0fad131de4f986"
   end
 
   def install
